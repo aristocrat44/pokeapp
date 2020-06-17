@@ -6,8 +6,21 @@
     text-align: center;
     background-color: #ffffff;
     border-radius: 3px;
+    cursor: pointer;
 }
 
-.pokecard-title{
-    font-size: 80%;
+.pokecard img {
+    max-height: 25vh;
+    max-width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.description {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Pompiere', cursive;
+
 }
