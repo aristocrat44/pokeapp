@@ -1,6 +1,7 @@
 import React from 'react';
 import Pokecard from '../pokecard/pokecard.js';
 import axios from 'axios';
+import loadingGIF from '../../img/loading_gangar.gif';
 import './pokedex.css';
 
 class Pokedex extends React.Component{
@@ -28,7 +29,7 @@ class Pokedex extends React.Component{
                     ))}
                 </div>
             </div>
-            ) : (('Loading...')) }
+            ) : (<img src={loadingGIF} className='loading'/>) }
             </React.Fragment>
         )
     }

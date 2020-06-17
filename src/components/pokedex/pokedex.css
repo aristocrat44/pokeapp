@@ -3,3 +3,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.loading {
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
+}
