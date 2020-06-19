@@ -8,7 +8,7 @@ class Pokedex extends React.Component{
 
 
     state={
-        poke_api:"https://pokeapi.co/api/v2/pokemon?limit=964",
+        poke_api:"https://pokeapi.co/api/v2/pokemon?limit=10", //964
         pokemon:null
     }
 
@@ -16,6 +16,7 @@ class Pokedex extends React.Component{
         const res = await axios.get(this.state.poke_api);
         this.setState({pokemon: res.data.results});
     }
+
 
     render(){
         return (
@@ -29,7 +30,9 @@ class Pokedex extends React.Component{
                     ))}
                 </div>
             </div>
-            ) : (<img src={loadingGIF} className='loading'/>) }
+            ) : (<img src={loadingGIF} alt="" className='loading'/>) }
+
+
             </React.Fragment>
         )
     }
