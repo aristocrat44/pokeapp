@@ -1,0 +1,13 @@
+h5 {
+    color:white;
+}
+
+.home{
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 20px;
+    background-color: white;
+}
+

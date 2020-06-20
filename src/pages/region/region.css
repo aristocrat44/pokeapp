@@ -1,0 +1,45 @@
+div{
+    font-family: 'Vollkorn', serif;
+}
+
+.region {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.region-cards{
+    width: 370px;
+    height: auto;
+    margin: 0.8rem;
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0, 0.56); 
+    background-color: #dcdcdc;
+    border-radius: 3px;
+}
+
+.region-cards:hover{
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0, 0.76); 
+}
+
+ul{
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+li span{
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 0px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+h1{
+    text-align: center;
+}
