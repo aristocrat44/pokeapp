@@ -31,6 +31,8 @@ added search (by name) (onChange) in homepage
 
 added Redux-Saga API call method for Homepage api
 
+** error handling are limited. One of the error to be encountered is ->'Uncaught (in promise) TypeError: Cannot read property 'name' of null' during pokemon details due to Habitat property of some pokemons being NULL.
+
 ** I don't think Region APIs return pokemon details. They return location details deeper into the nested apis.
 
 ** Since this is a simple small app, its doesn't acutally need Redux implementation as it can get tricky and makes the app heavier.

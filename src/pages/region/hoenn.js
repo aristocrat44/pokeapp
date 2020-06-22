@@ -11,7 +11,7 @@ export default class Hoenn extends Component {
     
     async componentDidMount(){     
         const res = await axios.get('https://pokeapi.co/api/v2/region/3');
-        console.log('asd',res.data.locations);
+       
         const locations = res.data.locations;
        let mapped_data = locations.map((location) => {
         return (

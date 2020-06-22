@@ -75,7 +75,7 @@ export default function Pokecard({name, url}) {
             return group.name;
         }));
         setGrowthRate(species_data.growth_rate.name);
-        setHabitat(species_data.habitat.name);
+        setHabitat((species_data.habitat.name === null) ?  'NA' : species_data.habitat.name);
         setGeneration(species_data.generation.name);
         setFormSwitchable(species_data.forms_switchable ? 'Yes':'No');
         setHappiness(species_data.base_happiness);
