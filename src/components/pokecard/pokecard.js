@@ -4,8 +4,6 @@ import imgNA from '../../img/image-not-available.jpg';
 import loadingGIF from '../../img/loading_pokeball.gif';
 import Tilt from 'react-tilt';
 import ReactImageFallback from "react-image-fallback";
-
-import axios from 'axios';
 import ModalBox from '../modal/modalbox';
 
 //const POKE_API ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";

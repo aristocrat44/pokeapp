@@ -15,8 +15,8 @@ export default class Hoenn extends Component {
         const locations = res.data.locations;
        let mapped_data = locations.map((location) => {
         return (
-            <div className='region-cards'>
-                <ul key={location.name} style={{listStyle:"none"}}>   
+            <div className='region-cards' key={location.name} >
+                <ul style={{listStyle:"none"}}>   
                 <li><span>Name:</span>{location.name}</li>
                 <li><span>Url:</span><a href={location.url} target="_blank">{location.url}</a></li>
                 </ul>

@@ -2,21 +2,28 @@ import React, { Component } from 'react';
 import {Navbar, Button, Nav, ButtonGroup} from 'react-bootstrap';
 import './navbar.css';
 import {Link} from "react-router-dom";
+import PokeBall from '../../img/pokeball_home.png';
 
 
 
 export default class NavigationBar extends Component {
 
     state={
-        gender_data:null
+    
     }
 
 
     render() {
         return (
             <div>
-                <Navbar bg="dark" variant="dark">
-                <Link to='/'><div className='home'>Home</div></Link>
+                <Navbar bg="dark" variant="dark" expand="lg">
+                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                 <Navbar.Collapse id="basic-navbar-nav">
+                <Link to='/'>
+                    <div className='home'>
+                        <img src={PokeBall} alt='' width='45' height='30'/>
+                    </div>
+                </Link>
                 
                     <Navbar.Brand><h5>Filter by:</h5></Navbar.Brand>
                     <Nav className="mr-auto">
@@ -43,14 +50,9 @@ export default class NavigationBar extends Component {
                         <Link to='/region/hoenn'><Button variant="secondary" size='sm'>Hoenn</Button></Link>
  
                         </ButtonGroup>
-                    
-                   
+                 
                     </Nav>
-                    
-                    <div>
-                    <input type="text" placeholder="Search" className="mr-sm-2" />
-                   
-                    </div>
+                    </Navbar.Collapse>
                 </Navbar>
             </div>
         )

@@ -7,10 +7,9 @@ export default function ModalBox({modal, handleClose, name, ...leftOverProps}) {
              {/* MODAL BOX Component*/}
         <Modal show={modal} onHide={handleClose}>
             <Modal.Header closeButton>
-    <Modal.Title>{name.toUpperCase()}</Modal.Title>
+        <Modal.Title>{name.toUpperCase()}</Modal.Title>
             </Modal.Header>
-                <Modal.Body>
-                  
+                <Modal.Body>   
                    <div>
                        Type:
                        {leftOverProps.types.map(type => <li key={type}>{type}</li>)}
@@ -33,7 +32,7 @@ export default function ModalBox({modal, handleClose, name, ...leftOverProps}) {
                    </div>
                    <div>
                        Egg Group:
-    {leftOverProps.eggGroup.map(group=><li key={group}>{group}</li>)}
+                    {leftOverProps.eggGroup.map(group=><li key={group}>{group}</li>)}
                    </div>
                    <div>
                        Growth Rate: {leftOverProps.growthRate}
@@ -56,9 +55,7 @@ export default function ModalBox({modal, handleClose, name, ...leftOverProps}) {
                     <Button variant="secondary" onClick={handleClose}>
                             Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                            Save Changes
-                    </Button>
+                    
                     </Modal.Footer>
         </Modal>
         </div>

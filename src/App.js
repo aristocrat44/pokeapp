@@ -1,6 +1,6 @@
 import React from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
-import Pokedex from './components/pokedex/pokedex.js';
+import Pokedex from './components/pokedex/view/pokedex.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MaleSpecies from './pages/gender/malespecies';
@@ -14,12 +14,12 @@ import Sea from './pages/habitat/sea';
 import Kanto from './pages/region/kanto';
 import Johto from './pages/region/johto';
 import Hoenn from './pages/region/hoenn';
-
+import {Container} from 'react-bootstrap';
 
 function App() {
   return (
     <Router>
-    <div className="">
+    <Container fluid>
     <Switch>
       <Route exact path='/' component={Pokedex}/>
       <Route exact path='/gender/male' component={MaleSpecies}/>
@@ -34,7 +34,7 @@ function App() {
       <Route exact path='/region/johto' component={Johto}/>
       <Route exact path='/region/hoenn' component={Hoenn}/>
     </Switch>
-    </div>
+    </Container>
     </Router>
   );
 }
