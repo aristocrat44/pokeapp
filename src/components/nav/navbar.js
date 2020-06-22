@@ -20,12 +20,14 @@ export default class NavigationBar extends Component {
                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
                  <Navbar.Collapse id="basic-navbar-nav">
                 <Link to='/'>
-                    <div className='home'>
-                        <img src={PokeBall} alt='' width='45' height='30'/>
+                    
+                    <div className='home-logo'>
+                    <span>Home</span>
+                        <img src={PokeBall} alt='' width='40' height='25'/>
                     </div>
                 </Link>
                 
-                    <Navbar.Brand><h5>Filter by:</h5></Navbar.Brand>
+                   
                     <Nav className="mr-auto">
                         <h5>Gender</h5>&nbsp;&nbsp;
                         <ButtonGroup size="sm" className="mr-2" aria-label="First group">
@@ -36,11 +38,15 @@ export default class NavigationBar extends Component {
                    
                         <h5>Habitat</h5>&nbsp;&nbsp;
                         <ButtonGroup className="mr-2" aria-label="First group">
+                        <Link to='/habitat/cave'><Button variant="secondary" size='sm'>Cave</Button></Link> &nbsp;
                         <Link to='/habitat/forest'><Button variant="secondary" size='sm'>Forest</Button></Link> &nbsp;
+                        <Link to='/habitat/grassland'><Button variant="secondary" size='sm'>Grassland</Button></Link> &nbsp;
                         <Link to='/habitat/mountain'><Button variant="secondary" size='sm'>Mountain</Button></Link> &nbsp;
                         <Link to='/habitat/rare'><Button variant="secondary" size='sm'>Rare</Button></Link> &nbsp;
                         <Link to='/habitat/rough-terrain'><Button variant="secondary" size='sm'>Rough Terrain</Button></Link> &nbsp;
-                        <Link to='/habitat/sea'><Button variant="secondary" size='sm'>Sea</Button></Link>
+                        <Link to='/habitat/sea'><Button variant="secondary" size='sm'>Sea</Button></Link>&nbsp;
+                        <Link to='/habitat/urban'><Button variant="secondary" size='sm'>Urban</Button></Link>&nbsp;
+                        <Link to='/habitat/waters-edge'><Button variant="secondary" size='sm'>Waters Edge</Button></Link>
                         </ButtonGroup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    
                         <h5>Region</h5>&nbsp;&nbsp;

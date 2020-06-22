@@ -6,8 +6,6 @@ import Tilt from 'react-tilt';
 import ReactImageFallback from "react-image-fallback";
 import ModalBox from '../modal/modalbox';
 
-//const POKE_API ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
-
 //fancier image API
 const IMG_API = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
 
@@ -108,24 +106,6 @@ export default function Pokecard({name, url}) {
         </div>
         </Tilt>
         <ModalBox modal={modal} handleClose={handleClose} name={name} {...leftOverProps}/>
-        
-        {/* MODAL BOX Component
-        <Modal show={modal} onHide={handleClose}>
-            <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-            </Modal.Header>
-                <Modal.Body>
-            {types.map(type => <li key={type}>{type}</li>)}
-                </Modal.Body>
-                    <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                            Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                            Save Changes
-                    </Button>
-                    </Modal.Footer>
-        </Modal> */}
      </React.Fragment>
     )
 }

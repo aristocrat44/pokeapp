@@ -116,7 +116,6 @@ const Pokedex = props =>{
 
 
 const mapStateToProps = (state,props) => {
-    console.log('results here',state.pokemon_reducer.pokemon_data.results);
     return { //setting redux returned data from reducer state to props to use above
       redux_pokemons: state.pokemon_reducer.pokemon_data.results, 
       redux_nextAPI: state.pokemon_reducer.pokemon_data.next
